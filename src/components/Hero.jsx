@@ -4,6 +4,7 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 import img1 from '../assets/img1.jpg'
+import ThemeToggle from "./ThemeToggle";
 
 
 
@@ -11,14 +12,16 @@ import img1 from '../assets/img1.jpg'
 const Hero = () => {
   const [activeNav, setActiveNav] = useState("HOME");
 
+
   const navItems = [
-    "HOME", "ABOUT US", "SERVICES", "PORTFOLIO", 
-    "TESTIMONIALS", "BLOG", "CONTACT US"
+    "HOME", "ABOUT US", "SERVICES", "PROJECTS", 
+    "TESTIMONIALS", "CONTACT US" 
   ];
 
   return (
     <div className="relative min-h-screen overflow-hidden">
       {/* Background Image with Overlay */}
+     
       <motion.div
         initial={{ scale: 1.1 }}
         animate={{ scale: 1 }}
@@ -45,7 +48,7 @@ const Hero = () => {
           whileHover={{ scale: 1.05 }}
           className="text-3xl lg:text-4xl font-bold text-white"
         >
-          Kavita<span className="text-orange-400">•</span>
+          Kavita <span className="text-orange-400">•</span>
         </motion.div>
 
         {/* Navigation Links */}
@@ -113,7 +116,7 @@ const Hero = () => {
             transition={{ duration: 0.8, delay: 0.6 }}
             className="text-lg md:text-xl text-gray-300 mb-12 max-w-3xl mx-auto leading-relaxed"
           >
-            I specialize in frontend development, turning ideas into elegant digital experiences with a passion for clean and responsive design.
+           I specialize in MERN Stack development, turning ideas into full-fledged digital experiences with a passion for clean code, responsive design, and seamless user interactions — both on the frontend and backend.
           </motion.p>
 
           {/* Services Line */}
@@ -142,7 +145,7 @@ const Hero = () => {
             transition={{ duration: 0.8, delay: 1.1 }}
             className="mt-16"
           >
-            <motion.button
+           <a href="/kavita-luhana Resume.pdf" target="_blank" rel="noopener noreferrer"> <motion.button
               whileHover={{ 
                 scale: 1.05, 
                 boxShadow: "0 20px 40px rgba(251, 146, 60, 0.3)" 
@@ -151,7 +154,7 @@ const Hero = () => {
               className="bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-400 hover:to-orange-500 text-white font-bold py-4 px-8 rounded-full transition-all duration-300 shadow-lg"
             >
               Hire Me
-            </motion.button>
+            </motion.button> </a>
           </motion.div>
         </div>
       </div>

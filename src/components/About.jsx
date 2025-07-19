@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import img2 from '../assets/img2.jpg'
+import { FaGithub, FaLinkedin } from "react-icons/fa";
 // Using a placeholder image for demo
 // const img2 = "https://images.unsplash.com/photo-1494790108755-2616b612b786?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80";
 
@@ -46,7 +47,7 @@ const About = () => {
               </motion.span>
               ,
               <br className="hidden lg:inline-block" />
-              a frontend web developer
+             a MERN Stack Developer
             </motion.h1>
             
             <motion.p
@@ -56,21 +57,21 @@ const About = () => {
               viewport={{ once: true }}
               className="mb-8 leading-relaxed text-lg text-gray-700"
             >
-              passionate about crafting{" "}
+              passionate about building{" "}
               <motion.span
                 whileHover={{ scale: 1.05 }}
                 className="text-indigo-600 font-semibold cursor-default"
               >
-                responsive
+                full-stack web
               </motion.span>{" "}
-              and{" "}
+              {" "}
               <motion.span
                 whileHover={{ scale: 1.05 }}
                 className="text-purple-600 font-semibold cursor-default"
               >
-                user-friendly
+               applications
               </motion.span>{" "}
-              web interfaces. With a keen eye for design and a love for clean code, I aim to build digital experiences that are both functional and visually appealing.
+             With a strong grasp of MongoDB, Express.js, React, and Node.js, I craft responsive, user-friendly interfaces and robust backend systems. I’m driven by clean code, intuitive design, and creating digital experiences that are both functional and visually engaging.
             </motion.p>
             
             {/* Skills Pills */}
@@ -81,7 +82,7 @@ const About = () => {
               viewport={{ once: true }}
               className="flex flex-wrap gap-3 mb-8"
             >
-              {['React', 'JavaScript', 'Tailwind CSS', 'HTML5', 'CSS3'].map((skill, index) => (
+              {['React', 'JavaScript', 'Tailwind CSS', 'HTML5', 'CSS3','Bootstrap','TypeScript','Firebase','NodeJs','ExpressJs','MongoDb','Python'].map((skill, index) => (
                 <motion.span
                   key={skill}
                   initial={{ scale: 0, opacity: 0 }}
@@ -103,7 +104,7 @@ const About = () => {
               viewport={{ once: true }}
               className="flex justify-center md:justify-start gap-4"
             >
-              <motion.button
+             {/* <a href="/"><motion.button
                 whileHover={{ 
                   scale: 1.05, 
                   boxShadow: "0 20px 40px rgba(99, 102, 241, 0.3)" 
@@ -112,8 +113,35 @@ const About = () => {
                 className="inline-flex text-white bg-gradient-to-r from-indigo-500 to-purple-600 border-0 py-3 px-8 focus:outline-none hover:from-indigo-600 hover:to-purple-700 rounded-lg text-lg font-semibold transition-all duration-300 shadow-lg"
               >
                 View Portfolio
-              </motion.button>
-              <motion.button
+              </motion.button> </a>  */}
+                <a href="https://github.com/Kavita-LachmanDas" target="_blank" rel="noopener noreferrer">
+        <motion.button
+          whileHover={{ 
+            scale: 1.05, 
+            boxShadow: "0 20px 40px rgba(99, 102, 241, 0.3)" 
+          }}
+          whileTap={{ scale: 0.95 }}
+          className="inline-flex items-center gap-2 text-white bg-gradient-to-r from-gray-800 to-gray-900 py-3 px-6 rounded-lg text-lg font-semibold transition-all duration-300 shadow-lg"
+        >
+          <FaGithub size={20} />
+          GitHub
+        </motion.button>
+      </a>
+
+      <a href="https://www.linkedin.com/in/kavita-luhana-0a31842ab/" target="_blank" rel="noopener noreferrer">
+        <motion.button
+          whileHover={{ 
+            scale: 1.05, 
+            boxShadow: "0 20px 40px rgba(99, 102, 241, 0.3)" 
+          }}
+          whileTap={{ scale: 0.95 }}
+          className="inline-flex items-center gap-2 text-white bg-gradient-to-r from-blue-600 to-blue-800 py-3 px-6 rounded-lg text-lg font-semibold transition-all duration-300 shadow-lg"
+        >
+          <FaLinkedin size={20} />
+          LinkedIn
+        </motion.button>
+      </a>
+             <a href="/kavita-luhana Resume.pdf" download> <motion.button
                 whileHover={{ 
                   scale: 1.05,
                   backgroundColor: "rgb(243, 244, 246)"
@@ -122,7 +150,7 @@ const About = () => {
                 className="inline-flex text-gray-700 bg-gray-100 border-2 border-gray-200 py-3 px-8 focus:outline-none hover:bg-gray-200 rounded-lg text-lg font-semibold transition-all duration-300"
               >
                 Download CV
-              </motion.button>
+              </motion.button> </a>
             </motion.div>
           </motion.div>
           

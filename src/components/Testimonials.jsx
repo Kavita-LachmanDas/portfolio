@@ -9,35 +9,35 @@ const TestimonialsSlider = () => {
     {
       name: "Ahmed Hassan",
       role: "CEO, TechCorp Pakistan",
-      company: "TechCorp",
+   
       text: "Outstanding work! The attention to detail and creativity exceeded our expectations. Highly professional and delivered on time.",
       rating: 5
     },
     {
       name: "Fatima Khan",
       role: "Marketing Director",
-      company: "Digital Solutions",
+      
       text: "Incredible design skills and perfect execution. The project was completed flawlessly and communication was excellent throughout.",
       rating: 5
     },
     {
       name: "Ali Raza",
       role: "Startup Founder",
-      company: "InnovateHub",
+    
       text: "Amazing portfolio work! Very creative approach and modern design. Would definitely recommend for any design project.",
       rating: 5
     },
     {
       name: "Sara Ahmed",
       role: "Product Manager",
-      company: "WebFlow Agency",
+
       text: "Professional service with great results. The final output was exactly what we needed for our brand. Excellent collaboration!",
       rating: 5
     },
     {
       name: "Muhammad Usman",
       role: "Business Owner",
-      company: "Local Enterprise",
+ 
       text: "Top-notch quality and service! The design perfectly captured our vision and helped boost our online presence significantly.",
       rating: 5
     }
